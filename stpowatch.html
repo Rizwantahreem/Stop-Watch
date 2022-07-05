@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stop-watch</title>
+</head>
+<body>
+    
+    <style>
+        body{
+            display: block;
+            background-color: azure;
+        } 
+        #first{
+            box-shadow: cadetblue;
+            border-style:groove;
+            border-radius: 9%;
+            border: 3px;
+            margin: 190px 500px;
+            height: 100px;
+            background-color: rgb(157, 200, 216);
+            padding: 80px 02px;
+        }
+        #hrs, #mins , #secs, #colon{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight:bolder;
+            font-size: 50px;
+            padding-bottom: 10px;
+        }
+
+        #restart, #stop, #start{
+            /* border */
+            font-size: 20px;
+            border-radius: 5px;
+            border: 2px;
+            margin-right: 2px;
+            padding: 10px 25px;
+        }
+        
+        #restart{
+            padding: 10px 20px;
+        }
+        #restart:hover{
+            color: antiquewhite;
+            background-color: rgb(33, 22, 199);
+            border-radius: 8px;
+            border-color: antiquewhite;
+        }
+
+        #stop:hover{
+            color: antiquewhite;
+            background-color: rgb(230, 21, 21);
+            border-radius: 8px;
+            border-color: antiquewhite;
+        }
+
+        #start:hover{
+            color: antiquewhite;
+            background-color: rgb(22, 199, 52);
+            border-radius: 8px;
+            border-color: antiquewhite;
+        }
+
+
+        #restart:hover{
+            color: antiquewhite;
+            background-color: rgb(33, 22, 199);
+
+        }
+        #buttons::shadow{
+            color: burlywood;
+            box-shadow: 3px;
+        }
+
+    </style>
+
+    <center id="first">
+        <div class="container">
+            <span id="hrs">00</span>
+            <span id="colon"> : </span>
+            <span id="mins">00</span>
+              <span id="colon"> : </span>
+            <span id="secs">00</span>
+            <br><br>
+            <span>
+                <button id="restart">restart</button>
+                <button id="stop">stop</button>
+                <button id="start">start</button>
+            </span>
+        </div>
+    </center>
+
+    <script src="stpwtch.js"></script>
+</body>
+</html>
